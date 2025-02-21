@@ -1,0 +1,17 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .game-container {
+    border-color: #ffffff;
+}
+
+body.dark-mode .cell {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .highlight {
+    background-color: #555555;
+}

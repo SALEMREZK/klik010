@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة X-O الاحترافية</title>
+    <link rel="stylesheet" href="SALEM.CSS">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="professional-mode.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>لعبة X-O الاحترافية</h1>
+        <div class="scoreboard">
+            <p>❌ X: <span id="score-x">0</span></p>
+            <p>⭕ O: <span id="score-o">0</span></p>
+        </div>
+        <div class="mode-selection">
+            <button id="player-vs-player">لاعب ضد لاعب</button>
+            <button id="player-vs-ai">لاعب ضد الكمبيوتر</button>
+            <button id="toggle-dark-mode">🌙 الوضع الليلي</button>
+            <button id="toggle-professional-mode">💼 الوضع الاحترافي</button>
+        </div>
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <p id="status"></p>
+        <p id="timer">⏳ الوقت: <span id="time-left">10</span> ثانية</p>
+        <button id="restart">إعادة التشغيل</button>
+    </div>
+    <div id="celebration" class="celebration hidden">🎉🎉🎉 مبروك! 🎉🎉🎉</div>
+    <audio id="move-sound" src="move.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="celebration-sound" src="celebration.mp3"></audio>
+    <script src="SALEM.JS"></script>
+    <footer style="text-align: center; margin-top: 20px; font-size: 1.2em; color: #f9fff9; font-weight: bold;">
+        <p>تم بواسطة سالم رزق</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
